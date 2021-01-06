@@ -434,8 +434,8 @@ button
 
 .legendimg
 {
-	margin-left: 6%;
-	margin-top: 3%;
+	padding-left: 6%;
+	padding-top: 3%;
 }
 
 /* ---------------------------------------- */
@@ -676,8 +676,8 @@ footer
 
 	.legendimg
 	{
-		margin-left: 5%;
-		margin-top: 0;
+		padding-left: 5%;
+		padding-top: 0;
 	}
 
 	/* ---------------------------------------- */
@@ -1057,8 +1057,7 @@ footer
 
 	.legendimg
 	{
-		margin-top: 0;
-		margin-left: 8%;
+		padding-left: 8%;
 		padding-top: 7%;
 	}
 
