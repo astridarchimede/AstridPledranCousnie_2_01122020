@@ -1,0 +1,1085 @@
+/* ---------------------------------------- */
+/* ==            SUMMARY              */
+/*---------------------------------------- */
+/* L 23_GENERAL */
+/* L 99_HEADER */
+/* L 152_SECTION1 */
+/* L 302_POPULAIRES	*/
+/* L 369_HEBERGEMENTS */
+/* L 401_ACTIVITES */
+/* L 425_FOOTER	*/
+/* L 450_MEDIAQUERIES_TABLETTE */
+/* L 686_MEDIAQUERIES_DESKTOP */
+
+/* ---------------------------------------- */
+/* ==       COLOR CODES           */
+/*---------------------------------------- */
+/*
+Bleu :	#0065FC;
+Bleu clair : #DEEBFF;
+Gris : #F2F2F2;
+*/
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* == GÉNÉRAL */
+/*---------------------------------------- */
+body
+{
+	margin : 25px 0 0px 0;
+}
+
+p,h1,h2,li,#citysearch,#afficher
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+p
+{
+	font-size: medium;
+	margin:0;
+}
+
+h1,h2,.prixbold
+{
+	font-weight: bold;
+}
+
+h1
+{
+	font-size: xx-large;
+}
+
+h2
+{
+	font-size: large;
+	margin: 0;
+}
+
+a
+{
+	text-decoration: none;
+	color: initial;
+}
+
+li
+{
+	list-style-type: none;
+}
+
+img
+{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.container
+{
+	padding: 5%;
+}
+
+.backgroundwhite
+{
+	background-color: white;
+}
+
+.backgroundwarmgrey
+{
+	background-color: #F2F2F2;
+}
+
+.backgroundlightgrey
+{
+	background-color: #FEFEFE;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* == HEADER  */
+/*---------------------------------------- */
+header>nav>ul
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: auto;
+	grid-template-rows: 1fr 1fr;
+	align-items: center;
+	padding: 0;
+	text-align: center;
+}
+
+#navheader :nth-child(3),#navheader :nth-child(4)
+{
+	padding: 10px 0 25px 0;
+}
+
+#navheader :nth-child(3)
+{
+	border-bottom: 7px solid #0065FC;
+}
+
+#navheader :nth-child(4)
+{
+	border-bottom: 7px solid #F2F2F2;
+}
+
+#bloclogo
+{
+	width: 60%;
+	margin-left: 5%;
+}
+
+#inscription
+{
+	text-align: end;
+	margin-right: 5%;
+}
+
+#inscription>a,#navheb
+{
+	color: #0065FC;
+}
+
+#inscription>a
+{
+	font-weight: 600;
+}
+
+#navact
+{
+	color:black;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* == SECTION1  */
+/*---------------------------------------- */
+
+/* BARRE DE RECHERCHE */
+#formsearch
+{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0 30px 0;
+}
+
+#mappoint,#citysearch,button
+{
+	height: 70px;
+}
+
+#mappoint,button
+{
+	width:70px;
+}
+
+#mappoint
+{
+	background-color:#F2F2F2;
+	border-radius: 20px 0 0 20px;
+	text-align:center;
+}
+
+.fa-map-marker-alt,.fa-search
+{
+	font-size:xx-large;
+}
+
+.fa-map-marker-alt
+{
+	padding: 25%;
+}
+
+#citysearch
+{
+	border-right: none;
+	border-left: none;	
+	border-top: 1.5px solid #F2F2F2;
+	border-bottom: 1.5px solid #F2F2F2;
+	background-color:white;
+	padding: 0 5%;
+	width: 70%;
+	font-size: large;
+	font-weight: 600;
+	color: black;
+}
+
+button
+{
+	background-color: #0065FC;
+	border: none;
+	border-radius: 30%;
+	margin-left: -25px;
+}
+
+.fa-search
+{
+	color: white;
+}
+
+#rechercher
+{
+	display: none;
+}
+
+/* FILTRES */
+#blocfiltres>h2
+{
+	margin-right: 15px;
+}
+
+#filtres
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.buttonfiltre
+{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	margin: 5px;
+	border : 3px solid #F2F2F2;
+	border-radius: 80px;
+}
+
+.buttonfiltre:hover
+{
+	color: #0065FC;
+	background-color: #F2F2F2;
+}
+
+.pictofiltre
+{
+	background-color: #DEEBFF;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	color: #0065FC;
+	font-size: 35px;
+	margin: -3px;
+	text-align: center;
+}
+
+.pictofiltre>i
+{
+	padding: 27%;
+}
+
+.textfiltre
+{
+	height: 70px;
+}
+
+.buttonfiltre>div>p
+{
+	font-size: large;
+	font-weight: 600;
+	padding: 25px;
+}
+
+/* INFOS */
+#info
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#info>div
+{
+	border-radius: 100%;
+	border: 1.5px solid #F2F2F2;
+	width: 50px;
+	margin-right: 25px;
+	text-align: center;
+}
+
+.fa-info
+{
+	color: #0065FC;
+	font-size: x-large;
+	padding: 18%;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* == POPULAIRES */
+/*---------------------------------------- */
+.fa-chart-line
+{
+	font-size: 50px;
+}
+
+#titrepopulaire
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.populaires,.activitesmarseille
+{
+	background-color: white;
+	border-radius: 35px;
+	box-shadow: 5px 10px 5px #E5E5E5;
+	margin-bottom: 25px;
+}
+
+.sousblocpop
+{
+	display: flex;
+	height: 150px;
+	padding:5px;
+}
+
+.imgpop
+{
+	border-radius: 35px 0 0 35px;
+	width: 35%;
+}
+
+.textpop
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 3%;
+}
+
+.textpop>div>p
+{
+	margin-top: 2%;
+}
+
+.fa-star
+{
+	font-size: medium;	
+}
+
+.bluestar
+{
+	color: #0065FC;
+}
+
+.greystar
+{
+	color: #D9D9D9;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* == HEBERGEMENTS */
+/*---------------------------------------- */
+.hebergementsmarseille
+{
+	background-color: white;
+	border-radius: 35px;
+	padding: 2%;
+	box-shadow: 5px 10px 5px #E5E5E5;
+	margin-bottom: 25px;
+	height: 200px;
+}
+
+.imgheb
+{
+	border-radius: 35px 35px 0 0;
+	height: 60%;
+}
+
+.textheb
+{
+	padding: 2%;
+}
+
+#afficher
+{
+	font-weight: 600;
+	font-size: 25px;
+	margin-top: 40px;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* == ACTIVITES */
+/*---------------------------------------- */
+.activitesmarseille
+{
+	height: 180px;
+}
+
+.imgact
+{
+	border-radius: 35px 35px 0 0;
+	height: 70%;
+}
+
+.legendimg
+{
+	margin-left: 6%;
+	margin-top: 3%;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* == FOOTER */
+/*---------------------------------------- */
+footer
+{
+	padding-bottom: 100px;
+}
+
+.listfooter>div>h2
+{
+	padding-top: 10%;
+	padding-bottom: 2%;
+}
+
+.listfooter>div>ul
+{
+	padding: 0;
+}
+
+.listfooter>div>ul>li
+{
+	padding-top: 2%;
+	font-size: small;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* == MEDIAQUERIES_TABLETTE */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+@media (min-width:768px) and (max-width: 1023px)
+{
+	/* ---------------------------------------- */
+	/* == TABLETTE MEDIAQUERIES_GENERAL */
+	/* ---------------------------------------- */
+	h1
+	{
+		font-size: x-large;
+	}
+
+	/* ---------------------------------------- */
+	/* == TABLETTE MEDIAQUERIES_HEADER */
+	/* ---------------------------------------- */
+	#bloclogo
+	{
+		width: 35%;
+		padding-left: 5%;
+	}
+
+	/* ---------------------------------------- */
+	/* == TABLETTE MEDIAQUERIES_SECTION 1 */
+	/* ---------------------------------------- */
+	#info>div
+	{
+		width: 40px;
+		height: 40px;
+	}
+
+	#info>p 
+	{
+		padding-top: 2%;
+	}
+
+	/* ---------------------------------------- */
+	/* == TABLETTE MEDIAQUERIES_POPULAIRES + MEDIAQUERIES_HEBERGEMENTS*/
+	/* ---------------------------------------- */
+	#blocs2s3
+	{
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+
+	#sectionpop,#sectionheb
+	{
+		border-radius: 30px;
+	}
+
+	#sectionpop
+	{
+		margin-bottom: 10px;
+	}
+
+	#blocpop
+	{
+		display: flex; /*??*/
+		justify-content: space-between;
+	}
+
+	.populaires
+	{
+		margin: 0%;
+		width: 32%;
+	}
+
+	.sousblocpop
+	{
+		flex-direction: column; /*??*/
+		height: 200px;
+	}
+
+	.imgpop
+	{
+		width: auto;
+		height: 50%; /*??*/
+		border-radius: 35px 35px 0 0;
+	}
+
+	.textpop
+	{
+		width: 100%;
+		height: 100%; /*??*/
+	}
+
+	.textpop>div>h2,.textpop>div>p,.textheb>h2,.textheb>p
+
+	{
+		font-size: smaller;
+	}
+
+	#sectionheb
+	{
+		background-color: #F2F2F2;
+	}
+
+	#sousblocheb
+	{
+		display: flex;
+		flex-flow: row wrap; /*??*/
+		justify-content: space-between;
+	}
+
+	.hebergementsmarseille
+	{
+		height: 200px;
+		width: 31%; 
+		padding: 1%;
+	}
+
+	.imgheb
+	{
+		height: 60%;/*??*/
+	}
+
+	.textheb
+	{
+		height: 30%;/*??*/
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#afficher
+	{
+		margin-top: 20px;
+	}
+
+	#afficher>a:hover
+	{
+		color: #0065FC;
+	}
+
+	/* ---------------------------------------- */
+	/* == TABLETTE MEDIAQUERIES_ACTIVITES */
+	/* ---------------------------------------- */
+	.blocactivites
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto 15rem 13rem 13rem 15rem ;
+		grid-gap:10px;
+	}
+
+	.blocactivites>header
+	{
+		grid-column-end: span 2;
+	}
+
+	.blocactivites>header,.blocactivites :nth-child(6),.blocactivites :nth-child(7)
+	{
+		grid-column-start: 1;
+	}
+
+	.blocactivites :nth-child(2),.blocactivites :nth-child(5)
+	{
+		grid-row-end: span 2;
+	}
+
+	.blocactivites :nth-child(3),.blocactivites :nth-child(4),.blocactivites :nth-child(5)
+	{
+		grid-column-start: 2;
+	}
+
+	.blocactivites :nth-child(6)
+	{
+		grid-row-start: 4;
+	}
+
+	.blocactivites :nth-child(7)
+	{
+		grid-row-start: 5;
+	}
+
+	.activitesmarseille /*?? POURQUOI FLEX HEIGHT AUTO*/
+	{
+		display: flex;
+		height: auto;/*??*/
+		margin: 0;
+	}
+
+	.activitesmarseille>a /*??*/ /*?? POURQUOI FLEX HEIGHT AUTO*/
+	{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.imgact
+	{
+		flex: 1;
+		min-height: 50%; /*??*/
+	}
+
+	.activitesmarseille>a>div
+	{
+		height: 70px;
+		line-height: 70px;
+		vertical-align: middle;
+	}
+
+	.legendimg
+	{
+		margin-left: 5%;
+		margin-top: 0;
+	}
+
+	/* ---------------------------------------- */
+	/* == TABLETTE MEDIAQUERIES_FOOTER */
+	/* ---------------------------------------- */
+	.listfooter
+	{
+		display: flex;
+		padding-top: 60px;
+	}
+
+	.blocfooter
+	{
+		margin-right: 10%;
+	}
+
+	.listfooter>div>h2
+	{
+		padding: 0;
+	}
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* == MEDIAQUERIES_DESKTOP */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+@media (min-width: 1024px)
+{
+	/* ---------------------------------------- */
+	/* == DESKTOP MEDIAQUERIES_GÉNÉRAL */
+	/* ---------------------------------------- */
+	body
+	{
+		margin: 0;
+	}
+
+	main 
+	{
+		max-width: 1500px;
+		margin:auto;
+	}
+
+	p,h2
+	{
+		font-size: medium;
+	}
+
+	h1
+	{
+		font-size: xx-large;
+	}
+
+	.container
+	{
+		padding:2% 40px 2% 40px;
+	}
+
+	/* ---------------------------------------- */
+	/* == DESKTOP MEDIAQUERIES_HEADER */
+	/* ---------------------------------------- */
+	#topheader
+	{
+		max-width: 1500px;
+		margin:auto;
+	}
+
+	header>nav>ul
+	{
+		display: flex;	
+		flex-flow: row nowrap;
+		margin-top: 0;
+		font-size: large;
+	}
+
+	#bloclogo
+	{
+		text-align: start;
+	}
+
+	#logo
+	{
+		width: 15%;
+	}
+
+	#inscription
+	{
+		order:4;
+		text-align: center;
+		margin: 0;
+	}
+
+	.menunav,#navheader :nth-child(3),#navheader :nth-child(4)
+	{
+		border-bottom: none; /*factoriser border*/
+	}
+
+	.menunav
+	{
+		width: 10%;
+		padding-top: 10px;
+	}
+
+	#navheader :nth-child(3),#navheader :nth-child(4)
+	{
+		padding-bottom: 0;
+	}
+
+	#navheader :nth-child(3) 
+	{
+		border-top: 2px solid #0065FC;
+	}
+
+	/* ---------------------------------------- */
+	/* == DESKTOP MEDIAQUERIES_SECTION1  */
+	/* ---------------------------------------- */
+	#formsearch
+	{
+		justify-content: left;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	#mappoint,#citysearch,button
+	{
+		height: 60px;
+	}
+
+	#mappoint
+	{
+		width: 60px;
+	}
+
+	#citysearch
+	{
+		width: 300px;
+		font-size: large;
+		padding: 15px;
+	}
+
+	#loupe
+	{
+		display: none;
+	}
+
+	button
+	{
+		width: 150px;
+		border-radius: 0 20px 20px 0;
+	}
+
+	#rechercher
+	{
+		color: white;
+		font-weight: 500;
+		display: block;
+	}
+	
+	#rechercher,#blocfiltres>h2,.buttonfiltre>div>p
+	{
+		font-size: large;
+	}
+
+	#blocfiltres
+	{
+		display: flex;
+		align-items: baseline;
+	}
+
+	#filtres
+	{
+		flex-direction: row;
+		flex-grow: 1;
+		justify-content: flex-start;
+	}
+
+	#filtres>div
+	{
+		margin-bottom: 10px;
+		margin-left: 10px;
+	}
+
+	.buttonfiltre
+	{
+		margin: 0;
+	}
+
+	.pictofiltre
+	{
+		width: 60px;
+		height: 60px;
+		font-size: 25px;
+	}
+
+	.textfiltre,.buttonfiltre>div>p
+	{
+		height: 55px;
+	}
+
+	.buttonfiltre>div>p
+	{
+		padding-top: 17px;
+		padding-left: 30px;
+	}
+
+	#info
+	{
+		align-items: center;
+	}
+
+	#info>div
+	{
+		width: 40px;
+		height: 40px;
+	}
+
+	#info>div>i
+	{
+		font-size: 20px;
+	}
+
+	/* ---------------------------------------- */
+	/* == DESKTOP MEDIAQUERIES_POPULAIRES + MEDIAQUERIES_HEBERGEMENTS*/
+	/* ---------------------------------------- */
+	#blocs2s3
+	{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+
+	#sectionpop
+	{
+		width: 38%;
+	}
+
+	#sectionpop,#sectionheb
+	{
+		border-radius: 30px;
+	}
+
+	.sousblocpop
+	{
+		height: 150px;
+	}
+
+	.imgpop
+	{
+		width: 40%;
+	}
+
+	.textpop
+	{
+		width: 50%;
+	}
+
+	.textpop>div>h2,.textheb>h2
+	{
+		font-size: large;
+	}
+
+	.textpop>div>p,.textheb>p
+	{
+		font-size: medium;
+	}
+
+	#sectionheb
+	{
+		width: 60%;
+		background-color: #F2F2F2;
+	}
+
+	#sousblocheb
+	{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		max-width: 785px;
+	}
+
+	.hebergementsmarseille
+	{
+		height: 200px;
+		min-width: 235px;
+		max-width: 31%;
+		padding: 1%;
+	}
+
+	.imgheb
+	{
+		height: 60%;
+	}
+
+	#afficher
+	{
+		margin-top: 20px;
+	}
+
+	#afficher>a:hover
+	{
+		color: #0065FC;
+	}
+
+	/* ---------------------------------------- */
+	/* == DESKTOP MEDIAQUERIES_ACTIVITES */
+	/* ---------------------------------------- */
+	.blocactivites
+	{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: auto 15rem 1rem 1rem 1rem 10rem ;
+		grid-column-gap:25px;
+	}
+
+	.blocactivites>header
+	{
+		grid-column-start: 1;
+		grid-column-end: span 4;
+	}
+
+	.blocactivites :nth-child(2),.blocactivites :nth-child(5)
+	{
+		grid-row-end: span 5;
+	}
+
+	.blocactivites :nth-child(3)
+	{
+		grid-row-end: span 3;
+	}
+
+	.blocactivites :nth-child(4)
+	{
+		grid-row-start: 6;	
+		grid-column-start: 2;
+	}
+
+	.blocactivites :nth-child(6),.blocactivites :nth-child(7)
+	{
+		grid-row-end: span 2;
+	}
+
+	.blocactivites :nth-child(7)
+	{
+		grid-column-start: 4;
+		grid-row-start: 5;
+	}
+
+	.activitesmarseille
+	{
+		height: auto;
+		margin: 0;
+	}
+
+	.activitesmarseille>a
+	{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.imgact
+	{
+		flex: 1;
+		min-height: 50%;
+	}
+
+	.activitesmarseille>a>div
+	{
+		height: 70px;
+	}
+
+	.legendimg
+	{
+		margin-top: 0;
+		margin-left: 8%;
+		padding-top: 7%;
+	}
+
+	/* ---------------------------------------- */
+	/* == DESKTOP MEDIAQUERIES_FOOTER */
+	/* ---------------------------------------- */
+	.listfooter
+	{
+		display: flex;
+		padding-top: 60px;
+		max-width: 1500px;
+		margin:auto;
+	}
+
+	.blocfooter
+	{
+		margin-right: 15%;
+	}
+
+	.listfooter>div>h2
+	{
+		padding: 0;
+	}
+}
