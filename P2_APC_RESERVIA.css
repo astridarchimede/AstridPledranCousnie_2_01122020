@@ -781,7 +781,7 @@ footer
 
 	.menunav
 	{
-		width: 10%;
+		min-width: 10%;
 		padding-top: 10px;
 	}
 
@@ -961,12 +961,10 @@ footer
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		max-width: 785px;
 	}
 
 	.hebergementsmarseille
 	{
-		height: 200px;
 		min-width: 235px;
 		max-width: 31%;
 		padding: 1%;
