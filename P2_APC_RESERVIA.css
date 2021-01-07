@@ -18,6 +18,7 @@
 Bleu :	#0065FC;
 Bleu clair : #DEEBFF;
 Gris : #F2F2F2;
+Light grey : #FEFEFE
 */
 
 /* ---------------------------------------- */
@@ -732,7 +733,7 @@ footer
 
 	h1
 	{
-		font-size: xx-large;
+		font-size: x-large;
 	}
 
 	.container
@@ -783,6 +784,11 @@ footer
 	{
 		min-width: 10%;
 		padding-top: 10px;
+	}
+
+	#navheader>.menunav>a:hover
+	{
+		color:grey;
 	}
 
 	#navheader :nth-child(3),#navheader :nth-child(4)
