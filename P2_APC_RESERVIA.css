@@ -801,6 +801,11 @@ footer
 		border-top: 2px solid #0065FC;
 	}
 
+	#navheader :nth-child(3):hover
+	{
+		border-top: 2px solid grey;
+	}
+
 	/* ---------------------------------------- */
 	/* == DESKTOP MEDIAQUERIES_SECTION1  */
 	/* ---------------------------------------- */
