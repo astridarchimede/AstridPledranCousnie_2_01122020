@@ -17,5 +17,6 @@ Fonctionnalités</br>
 ***  Je te recommande d'utiliser Visual Studio Code, plusieurs plugins pourront te simplifier la vie, par exemple Live Server ou Prettier. </br>
 ***  Tu peux intégrer les icônes Font Awesome en HTML ou CSS. Je te conseille fortement d’utiliser Flexbox mais tu peux aussi utiliser CSS Grid si tu veux. </br>
 ***  Ton code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS. </br>
-***  Le site devra être compatible avec les dernières versions de Chrome et Firefox. ** Pense à séparer le HTML et le CSS et à organiser ton dossier de rendu. </br>
+***  Le site devra être compatible avec les dernières versions de Chrome et Firefox. </br>
+*** Pense à séparer le HTML et le CSS et à organiser ton dossier de rendu. </br>
 ***  N’oublie pas de versionner ton code avec Git, et ce dès les premières lignes de code. C’est hyper important quand on travaille en équipe. Et il faut que tu déploies la page sur GitHub Pages ou GitLab Pages comme tu préfères.</br>
