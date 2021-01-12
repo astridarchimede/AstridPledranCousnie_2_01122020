@@ -1,8 +1,7 @@
 # AstridPledranCousnie_2_01122020</br>
-Projet 2 - RESERVIA</br>
-PROJET2_APC </br>
-Checklist </br></br>
-Fonctionnalités</br>
+Projet 2 - RESERVIA</br></br>
+Checklist :</br>
+</br>Fonctionnalités</br>
 ***  Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. En revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel. </br>
 ***  Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour l’instant les liens seront vides. </br>
 ***  Les filtres ne seront pas fonctionnels pour cette version, en revanche, il faut qu’ils changent d’apparence au survol. Je te laisse décider de l’effet le plus approprié. </br>
