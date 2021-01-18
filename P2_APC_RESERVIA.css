@@ -29,7 +29,7 @@ Light grey : #FEFEFE
 /*---------------------------------------- */
 body
 {
-	margin : 25px 0 0px 0;
+	margin : 0;
 }
 
 p,h1,h2,li,#citysearch,#afficher
@@ -37,9 +37,9 @@ p,h1,h2,li,#citysearch,#afficher
 	font-family: 'Raleway', sans-serif;
 }
 
-p
+p,h2,.listfooter>div>ul>li, #afficher
 {
-	font-size: medium;
+	font-size: 12px;
 	margin:0;
 }
 
@@ -48,15 +48,14 @@ h1,h2,.prixbold
 	font-weight: bold;
 }
 
-h1
+#inscription>a,#citysearch,.buttonfiltre>div>p,#afficher
 {
-	font-size: xx-large;
+	font-weight: 600;
 }
 
-h2
+h1
 {
-	font-size: large;
-	margin: 0;
+	font-size: 18px;
 }
 
 a
@@ -121,34 +120,34 @@ header>nav>ul
 
 #navheader :nth-child(3)
 {
-	border-bottom: 7px solid #0065FC;
+	border-bottom: 2px solid #0065FC;
 }
 
 #navheader :nth-child(4)
 {
-	border-bottom: 7px solid #F2F2F2;
+	border-bottom: 2px solid #F2F2F2;
 }
 
 #bloclogo
 {
-	width: 60%;
-	margin-left: 5%;
+	width: 95px;
+	margin-left: 20px;
+}
+
+.menunav,#citysearch
+{
+	font-size: 14px;
 }
 
 #inscription
 {
 	text-align: end;
-	margin-right: 5%;
+	margin-right: 20px;
 }
 
 #inscription>a,#navheb
 {
 	color: #0065FC;
-}
-
-#inscription>a
-{
-	font-weight: 600;
 }
 
 #navact
@@ -161,8 +160,8 @@ header>nav>ul
 /* ---------------------------------------- */
 /* ---------------------------------------- */
 /* == SECTION1  */
-/*---------------------------------------- */
 
+/*---------------------------------------- */
 /* BARRE DE RECHERCHE */
 #formsearch
 {
@@ -176,29 +175,29 @@ header>nav>ul
 
 #mappoint,#citysearch,button
 {
-	height: 70px;
+	height: 50px;
 }
 
 #mappoint,button
 {
-	width:70px;
+	width:50px;
 }
 
 #mappoint
 {
 	background-color:#F2F2F2;
-	border-radius: 20px 0 0 20px;
+	border-radius: 15px 0 0 15px;
 	text-align:center;
 }
 
 .fa-map-marker-alt,.fa-search
 {
-	font-size:xx-large;
+	font-size:19px;
 }
 
 .fa-map-marker-alt
 {
-	padding: 25%;
+	padding: 30%;
 }
 
 #citysearch
@@ -210,8 +209,6 @@ header>nav>ul
 	background-color:white;
 	padding: 0 5%;
 	width: 70%;
-	font-size: large;
-	font-weight: 600;
 	color: black;
 }
 
@@ -219,7 +216,7 @@ button
 {
 	background-color: #0065FC;
 	border: none;
-	border-radius: 30%;
+	border-radius: 15px;
 	margin-left: -25px;
 }
 
@@ -236,14 +233,14 @@ button
 /* FILTRES */
 #blocfiltres>h2
 {
-	margin-right: 15px;
+	margin-bottom: 15px;
 }
 
 #filtres
 {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .buttonfiltre
@@ -252,8 +249,9 @@ button
 	flex-flow: row nowrap;
 	align-items: center;
 	margin: 5px;
-	border : 3px solid #F2F2F2;
+	border : 2px solid #F2F2F2;
 	border-radius: 80px;
+	height: 47px;
 }
 
 .buttonfiltre:hover
@@ -265,30 +263,18 @@ button
 .pictofiltre
 {
 	background-color: #DEEBFF;
-	width: 80px;
-	height: 80px;
+	width: 50px;
+	height: 50px;
 	border-radius: 100%;
 	color: #0065FC;
-	font-size: 35px;
+	font-size: 20px;
 	margin: -3px;
 	text-align: center;
 }
 
-.pictofiltre>i
+.pictofiltre>i,.textfiltre
 {
-	padding: 27%;
-}
-
-.textfiltre
-{
-	height: 70px;
-}
-
-.buttonfiltre>div>p
-{
-	font-size: large;
-	font-weight: 600;
-	padding: 25px;
+	padding: 15px;
 }
 
 /* INFOS */
@@ -302,16 +288,16 @@ button
 {
 	border-radius: 100%;
 	border: 1.5px solid #F2F2F2;
-	width: 50px;
-	margin-right: 25px;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
 	text-align: center;
 }
 
 .fa-info
 {
 	color: #0065FC;
-	font-size: x-large;
-	padding: 18%;
+	font-size: 10px;
 }
 
 /* ---------------------------------------- */
@@ -322,7 +308,7 @@ button
 /*---------------------------------------- */
 .fa-chart-line
 {
-	font-size: 50px;
+	font-size: 18px;
 }
 
 #titrepopulaire
@@ -333,25 +319,29 @@ button
 	justify-content: space-between;
 }
 
-.populaires,.activitesmarseille
+.populaires,.activitesmarseille,.hebergementsmarseille
 {
 	background-color: white;
-	border-radius: 35px;
-	box-shadow: 5px 10px 5px #E5E5E5;
-	margin-bottom: 25px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px #E5E5E5;
+}
+
+.populaires,.hebergementsmarseille
+{
+	margin-bottom: 10px;
 }
 
 .sousblocpop
 {
 	display: flex;
-	height: 150px;
+	height: 145px;
 	padding:5px;
 }
 
 .imgpop
 {
-	border-radius: 35px 0 0 35px;
-	width: 35%;
+	border-radius: 15px 0 0 15px;
+	width: 40%;
 }
 
 .textpop
@@ -369,7 +359,7 @@ button
 
 .fa-star
 {
-	font-size: medium;	
+	font-size: 12px;	
 }
 
 .bluestar
@@ -390,30 +380,32 @@ button
 /*---------------------------------------- */
 .hebergementsmarseille
 {
-	background-color: white;
-	border-radius: 35px;
 	padding: 2%;
-	box-shadow: 5px 10px 5px #E5E5E5;
-	margin-bottom: 25px;
 	height: 200px;
+}
+
+.imgheb,.imgact
+{
+	border-radius: 15px 15px 0 0;
 }
 
 .imgheb
 {
-	border-radius: 35px 35px 0 0;
 	height: 60%;
 }
 
 .textheb
 {
 	padding: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 30%;
 }
 
 #afficher
 {
-	font-weight: 600;
-	font-size: 25px;
-	margin-top: 40px;
+	margin-top: 35px;
 }
 
 /* ---------------------------------------- */
@@ -425,18 +417,18 @@ button
 .activitesmarseille
 {
 	height: 180px;
+	margin-bottom: 22px;
 }
 
 .imgact
 {
-	border-radius: 35px 35px 0 0;
 	height: 70%;
 }
 
 .legendimg
 {
 	padding-left: 6%;
-	padding-top: 3%;
+	padding-top: 4%;
 }
 
 /* ---------------------------------------- */
@@ -445,15 +437,9 @@ button
 /* ---------------------------------------- */
 /* == FOOTER */
 /*---------------------------------------- */
-footer
-{
-	padding-bottom: 100px;
-}
-
 .listfooter>div>h2
 {
-	padding-top: 10%;
-	padding-bottom: 2%;
+	padding-top: 15px;
 }
 
 .listfooter>div>ul
@@ -463,8 +449,7 @@ footer
 
 .listfooter>div>ul>li
 {
-	padding-top: 2%;
-	font-size: small;
+	padding-bottom: 17px;
 }
 
 /* ---------------------------------------- */
@@ -479,14 +464,6 @@ footer
 @media (min-width:768px) and (max-width: 1023px)
 {
 	/* ---------------------------------------- */
-	/* == TABLETTE MEDIAQUERIES_GENERAL */
-	/* ---------------------------------------- */
-	h1
-	{
-		font-size: x-large;
-	}
-
-	/* ---------------------------------------- */
 	/* == TABLETTE MEDIAQUERIES_HEADER */
 	/* ---------------------------------------- */
 	#bloclogo
@@ -498,20 +475,19 @@ footer
 	/* ---------------------------------------- */
 	/* == TABLETTE MEDIAQUERIES_SECTION 1 */
 	/* ---------------------------------------- */
-	#info>div
-	{
-		width: 40px;
-		height: 40px;
-	}
-
 	#info>p 
 	{
-		padding-top: 2%;
+		padding-top: 5px;
 	}
 
 	/* ---------------------------------------- */
 	/* == TABLETTE MEDIAQUERIES_POPULAIRES + MEDIAQUERIES_HEBERGEMENTS*/
 	/* ---------------------------------------- */
+	.container-flex
+	{
+		padding: 1% 5% 3% 5%;
+	}
+
 	#blocs2s3
 	{
 		padding-left: 2%;
@@ -520,7 +496,7 @@ footer
 
 	#sectionpop,#sectionheb
 	{
-		border-radius: 30px;
+		border-radius: 15px;
 	}
 
 	#sectionpop
@@ -543,26 +519,20 @@ footer
 	.sousblocpop
 	{
 		flex-direction: column; 
-		height: 200px;
+		height: 160px;
 	}
 
 	.imgpop
 	{
 		width: auto;
 		height: 50%; 
-		border-radius: 35px 35px 0 0;
+		border-radius: 15px 15px 0 0;
 	}
 
 	.textpop
 	{
 		width: 100%;
 		height: 100%; 
-	}
-
-	.textpop>div>h2,.textpop>div>p,.textheb>h2,.textheb>p
-
-	{
-		font-size: smaller;
 	}
 
 	#sectionheb
@@ -581,7 +551,7 @@ footer
 	{
 		height: 200px;
 		width: 31%; 
-		padding: 1%;
+		padding: 5px;
 	}
 
 	.imgheb
@@ -597,16 +567,6 @@ footer
 		justify-content: space-between;
 	}
 
-	#afficher
-	{
-		margin-top: 20px;
-	}
-
-	#afficher>a:hover
-	{
-		color: #0065FC;
-	}
-
 	/* ---------------------------------------- */
 	/* == TABLETTE MEDIAQUERIES_ACTIVITES */
 	/* ---------------------------------------- */
@@ -615,7 +575,7 @@ footer
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto 15rem 13rem 13rem 15rem ;
-		grid-gap:10px;
+		grid-gap:25px;
 	}
 
 	.blocactivites>header
@@ -715,25 +675,15 @@ footer
 	/* ---------------------------------------- */
 	/* == DESKTOP MEDIAQUERIES_GÉNÉRAL */
 	/* ---------------------------------------- */
-	body
-	{
-		margin: 0;
-	}
-
 	main 
 	{
 		max-width: 1500px;
 		margin:auto;
 	}
 
-	p,h2
+	h2,#afficher
 	{
-		font-size: medium;
-	}
-
-	h1
-	{
-		font-size: x-large;
+		font-size: 14px;
 	}
 
 	.container
@@ -755,45 +705,35 @@ footer
 		display: flex;	
 		flex-flow: row nowrap;
 		margin-top: 0;
-		font-size: large;
+		align-items: baseline;
 	}
 
 	#bloclogo
 	{
 		text-align: start;
-	}
-
-	#logo
-	{
-		width: 15%;
+		margin-right: 52%;
 	}
 
 	#inscription
 	{
 		order:4;
 		text-align: center;
-		margin: 0;
+		margin-top: -16px;
 	}
 
 	.menunav,#navheader :nth-child(3),#navheader :nth-child(4)
 	{
-		border-bottom: none; /*factoriser border*/
+		border-bottom: none;
 	}
 
 	.menunav
 	{
 		min-width: 10%;
-		padding-top: 10px;
 	}
 
 	#navheader>.menunav>a:hover
 	{
 		color:grey;
-	}
-
-	#navheader :nth-child(3),#navheader :nth-child(4)
-	{
-		padding-bottom: 0;
 	}
 
 	#navheader :nth-child(3) 
@@ -804,6 +744,11 @@ footer
 	#navheader :nth-child(3):hover
 	{
 		border-top: 2px solid grey;
+	}
+
+	#navheader :nth-child(3),#navheader :nth-child(4) 
+	{
+		padding: 40px 0 0 0;
 	}
 
 	/* ---------------------------------------- */
@@ -818,18 +763,18 @@ footer
 
 	#mappoint,#citysearch,button
 	{
-		height: 60px;
+		height: 50px;
 	}
 
 	#mappoint
 	{
-		width: 60px;
+		width: 50px;
 	}
 
 	#citysearch
 	{
 		width: 300px;
-		font-size: large;
+		font-size: 15px;
 		padding: 15px;
 	}
 
@@ -840,7 +785,7 @@ footer
 
 	button
 	{
-		width: 150px;
+		width: 130px;
 		border-radius: 0 20px 20px 0;
 	}
 
@@ -850,17 +795,18 @@ footer
 		font-weight: 500;
 		display: block;
 	}
-	
-	#rechercher,#blocfiltres>h2,.buttonfiltre>div>p
-	{
-		font-size: large;
-	}
 
 	#blocfiltres
 	{
 		display: flex;
 		align-items: baseline;
 	}
+
+	#blocfiltres>h2
+	{
+		margin-right: 30px;
+	}
+	
 
 	#filtres
 	{
@@ -871,47 +817,12 @@ footer
 
 	#filtres>div
 	{
-		margin-bottom: 10px;
-		margin-left: 10px;
-	}
-
-	.buttonfiltre
-	{
-		margin: 0;
-	}
-
-	.pictofiltre
-	{
-		width: 60px;
-		height: 60px;
-		font-size: 25px;
-	}
-
-	.textfiltre,.buttonfiltre>div>p
-	{
-		height: 55px;
-	}
-
-	.buttonfiltre>div>p
-	{
-		padding-top: 17px;
-		padding-left: 30px;
+		margin: 0 20px 0 0;
 	}
 
 	#info
 	{
 		align-items: center;
-	}
-
-	#info>div
-	{
-		width: 40px;
-		height: 40px;
-	}
-
-	#info>div>i
-	{
-		font-size: 20px;
 	}
 
 	/* ---------------------------------------- */
@@ -928,17 +839,22 @@ footer
 
 	#sectionpop
 	{
-		width: 38%;
+		width: 30%;
 	}
 
 	#sectionpop,#sectionheb
 	{
-		border-radius: 30px;
+		border-radius: 15px;
+	}
+
+	.populaires
+	{
+		margin-bottom: 30px;
 	}
 
 	.sousblocpop
 	{
-		height: 150px;
+		height: 140px;
 	}
 
 	.imgpop
@@ -951,34 +867,24 @@ footer
 		width: 50%;
 	}
 
-	.textpop>div>h2,.textheb>h2
-	{
-		font-size: large;
-	}
-
-	.textpop>div>p,.textheb>p
-	{
-		font-size: medium;
-	}
-
 	#sectionheb
 	{
-		width: 60%;
+		width: 65%;
 		background-color: #F2F2F2;
 	}
 
 	#sousblocheb
 	{
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: 200px;
+		grid-column-gap:30px;
+		grid-row-gap:30px;
 	}
 
 	.hebergementsmarseille
 	{
-		min-width: 235px;
-		max-width: 31%;
-		padding: 1%;
+		margin-bottom: 0;
 	}
 
 	.imgheb
@@ -988,7 +894,7 @@ footer
 
 	#afficher
 	{
-		margin-top: 20px;
+		margin-bottom: 30px;
 	}
 
 	#afficher>a:hover
@@ -1003,8 +909,8 @@ footer
 	{
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: auto 15rem 1rem 1rem 1rem 10rem ;
-		grid-column-gap:25px;
+		grid-template-rows: auto 180px 40px 40px 160px ;
+		grid-column-gap:40px;
 	}
 
 	.blocactivites>header
@@ -1015,29 +921,25 @@ footer
 
 	.blocactivites :nth-child(2),.blocactivites :nth-child(5)
 	{
-		grid-row-end: span 5;
+		grid-row-end: span 4;
 	}
 
 	.blocactivites :nth-child(3)
 	{
-		grid-row-end: span 3;
+		grid-row-end: span 2;
 	}
 
 	.blocactivites :nth-child(4)
 	{
-		grid-row-start: 6;	
+		grid-row-start: 5;	
 		grid-column-start: 2;
-	}
-
-	.blocactivites :nth-child(6),.blocactivites :nth-child(7)
-	{
-		grid-row-end: span 2;
 	}
 
 	.blocactivites :nth-child(7)
 	{
 		grid-column-start: 4;
-		grid-row-start: 5;
+		grid-row-start: 4;
+		grid-row-end: span 2;
 	}
 
 	.activitesmarseille
@@ -1061,13 +963,13 @@ footer
 
 	.activitesmarseille>a>div
 	{
-		height: 70px;
+		height: 55px;
 	}
 
 	.legendimg
 	{
 		padding-left: 8%;
-		padding-top: 7%;
+		padding-top: 20px;
 	}
 
 	/* ---------------------------------------- */
@@ -1083,7 +985,7 @@ footer
 
 	.blocfooter
 	{
-		margin-right: 15%;
+		margin-right: 20%;
 	}
 
 	.listfooter>div>h2
