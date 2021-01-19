@@ -480,6 +480,11 @@ button
 		padding-top: 5px;
 	}
 
+	#citysearch
+	{
+		width: 55%;
+	}
+
 	/* ---------------------------------------- */
 	/* == TABLETTE MEDIAQUERIES_POPULAIRES + MEDIAQUERIES_HEBERGEMENTS*/
 	/* ---------------------------------------- */
