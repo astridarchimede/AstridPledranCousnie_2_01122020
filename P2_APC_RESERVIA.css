@@ -2,14 +2,14 @@
 /* ==            SUMMARY              */
 /*---------------------------------------- */
 /* L 23_GENERAL */
-/* L 99_HEADER */
+/* L 104_HEADER */
 /* L 158_SECTION1 */
-/* L 316_POPULAIRES	*/
-/* L 384_HEBERGEMENTS */
-/* L 418_ACTIVITES */
-/* L 441_FOOTER	*/
-/* L 469_MEDIAQUERIES_TABLETTE */
-/* L 703_MEDIAQUERIES_DESKTOP */
+/* L 303_POPULAIRES	*/
+/* L 375_HEBERGEMENTS */
+/* L 411_ACTIVITES */
+/* L 434_FOOTER	*/
+/* L 455_MEDIAQUERIES_TABLETTE */
+/* L 664_MEDIAQUERIES_DESKTOP */
 
 /* ---------------------------------------- */
 /* ==       COLOR CODES           */
@@ -48,14 +48,19 @@ h1,h2,.prixbold
 	font-weight: bold;
 }
 
+h1
+{
+	font-size: 18px;
+}
+
 #inscription>a,#citysearch,.buttonfiltre>div>p,#afficher
 {
 	font-weight: 600;
 }
 
-h1
+.menunav,#citysearch
 {
-	font-size: 18px;
+	font-size: 14px;
 }
 
 a
@@ -132,11 +137,6 @@ header>nav>ul
 {
 	width: 95px;
 	margin-left: 20px;
-}
-
-.menunav,#citysearch
-{
-	font-size: 14px;
 }
 
 #inscription
@@ -688,7 +688,7 @@ button
 
 	.container
 	{
-		padding:2% 40px 2% 40px;
+		padding:15px 40px 15px 40px;
 	}
 
 	/* ---------------------------------------- */
@@ -705,6 +705,7 @@ button
 		display: flex;	
 		flex-flow: row nowrap;
 		margin-top: 0;
+		margin-left: 15px;
 		align-items: baseline;
 	}
 
@@ -879,7 +880,7 @@ button
 		grid-template-columns: repeat(3,1fr);
 		grid-template-rows: 200px;
 		grid-column-gap:30px;
-		grid-row-gap:30px;
+		grid-row-gap:40px;
 	}
 
 	.hebergementsmarseille
@@ -911,6 +912,7 @@ button
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: auto 180px 40px 40px 160px ;
 		grid-column-gap:40px;
+		margin-bottom: 50px;
 	}
 
 	.blocactivites>header
@@ -977,10 +979,10 @@ button
 	/* ---------------------------------------- */
 	.listfooter
 	{
-		display: flex;
-		padding-top: 60px;
 		max-width: 1500px;
-		margin:auto;
+		margin: auto;
+		display: flex;
+		padding-top: 40px;
 	}
 
 	.blocfooter
